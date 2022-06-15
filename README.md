@@ -1,10 +1,12 @@
-# _New Project_
+# _Pig Dice_
 
-#### By _**Liam Campbell_
+#### By _Liam Campbell_
+#### By _Ales McKnight_
 
-#### _{Brief description of application}_
 
-![A cartoon image of people voting](img/vote.jpeg)
+#### _A Dicing Game_
+
+![Pigs](img/pig.jpeg)
 
 ## Technologies Used
 
@@ -36,4 +38,4 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 _Feel free to reach out via [Github](github.com.lcmpbll) to provide feedback on this project or to view my other projects._
 
-[Copyright](LICENSE) (c) _date_ _author name(s)_
+[Copyright](LICENSE) (c) _06-13-2022_ _Liam Campbell_Alex McKnight_
