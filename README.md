@@ -1,7 +1,7 @@
 # _Pig Dice_
 
 #### By _Liam Campbell_
-#### By _Ales McKnight_
+#### By _Alex McKnight_
 
 
 #### _A Dicing Game_

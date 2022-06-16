@@ -93,6 +93,7 @@ let game = new Game();
 
 $(document).ready(function () {
 	let player1 = new Player(0, 0, 0);
+	let player2 = new Player(0, 0, 0);
 	$('button#p1Roll').click(function(event) {
 		event.preventDefault();
 		
@@ -114,8 +115,31 @@ $(document).ready(function () {
 		$(".p2Roll").html("0");
 		$(".p1GrandTotal").html(player1.totalScore);
 	});
+
+
+	$('button#p2Roll').click(function(event) {
+		event.preventDefault();
+
+			//player2.newGame();
+			let player2DieRoll = player2.rollDice();
+			$(".p2RollResult").text(player2DieRoll);
+			let player2TempScore = player2.scoreAdder();
+			console.log(player2TempScore);
+			$(".p2Roll").html(player2.roll);
+			$(".p2TurnTotal").text(player2.tempScore);
+			$(".p2GrandTotal").html(player2.totalScore);
+		});
 	
-});
+		$('button#p2Hold').click(function (event) {
+			event.preventDefault();
+			player2.hold();
+			player2.win();
+			$(".p2TurnTotal").html("0");
+			$(".p2Roll").html("0");
+			$(".p2GrandTotal").html(player2.totalScore);
+		});
+	});
+	
 
 // // Business Logic
 // function Player() {
