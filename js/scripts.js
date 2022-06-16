@@ -12,24 +12,24 @@ Game.prototype.assignId = function() {
 	return this.currentId;
 }
 //Players
-function Player(dieRoll, tempScore, totalScore, scoreArray) {
+function Player(dieRoll, tempScore, totalScore, ) {
   this.dieRoll = dieRoll;
   this.tempScore = tempScore;
   this.totalScore = totalScore;
-	this.scoreArray = scoreArray;
+	//this.scoreArray = scoreArray;
 }
  
 Player.prototype.newGame = function () {
 	this.tempScore = 0;
 	this.totalScore = 0;
-	this.scoreArray = []
+	//this.scoreArray = []
 }
 
 //Dice
 Player.prototype.rollDice = function() {
   this.dieRoll = 1 + Math.floor(Math.random() * 6);
 	//this.scoreArray.push(this.dieRoll);
-	console.log(this.scoreArray);
+	//console.log(this.scoreArray);
 	return this.dieRoll;
 }
 
@@ -92,7 +92,7 @@ if (this.totalScore >= 100){
 let game = new Game();
 
 $(document).ready(function () {
-	let player1 = new Player(0, 0, 0, []);
+	let player1 = new Player(0, 0, 0);
 	$('button#p1Roll').click(function(event) {
 		event.preventDefault();
 		
